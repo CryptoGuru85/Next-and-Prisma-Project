@@ -1,0 +1,110 @@
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.mainContainer .title::after {
+    content: "";
+    position: relative;
+    top: 4px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-red);
+    transition: all ease-in .1s;
+}
+.mainContainer:hover .title::after {
+    width: 80%;
+}
+.mainContainer:hover .title {
+    color: var(--main-red);
+}
+
+.mainContainer .title {
+    padding: 0 24px 0 24px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in .1s;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon {
+    transition: all ease-in .15s;
+}
+.mainContainer:hover .icon {
+    transform: rotateZ(-180deg);
+}
+
+.icon path {
+    transition: all ease-in .1s;
+    stroke: #fff;
+}
+
+.mainContainer:hover .icon path {
+    stroke: var(--main-red);
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    border-bottom: 4px solid var(--main-red);
+    border-radius: 2px 2px 4px 4px;
+
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .1s ease-in-out, opacity ease-in .1s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.mainContainer:hover .dropdownMenu {
+    transform: scaleY(1);
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.button {
+    padding: 24px;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--main-black);
+
+    transition: all .15s ease-in;
+
+    border: none;
+    outline: none;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: var(--main-red);
+    transition: all ease-in .2s;
+}
+.button:hover {
+    background-color: var(--main-light-grey);
+}
+
+.button:hover {
+    height: 100%;
+}

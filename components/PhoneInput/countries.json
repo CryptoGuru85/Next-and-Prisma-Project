@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Armenia",
+		"dial_code": "+374",
+		"code": "AM"
+	},
+	{
+		"name": "Brazil",
+		"dial_code": "+55",
+		"code": "BR"
+	},
+	{
+		"name": "Canada",
+		"dial_code": "+1",
+		"code": "CA"
+	},
+	{
+		"name": "China",
+		"dial_code": "+86",
+		"code": "CN"
+	},
+	{
+		"name": "Czech Republic",
+		"dial_code": "+420",
+		"code": "CZ"
+	},
+	{
+		"name": "Russia",
+		"dial_code": "+7",
+		"code": "RU"
+	},
+	{
+		"name": "United States",
+		"dial_code": "+1",
+		"code": "US"
+	}
+]

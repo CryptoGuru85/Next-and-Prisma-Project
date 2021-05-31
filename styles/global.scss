@@ -1,0 +1,98 @@
+@import "styles.scss";
+
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Geometria"), url("../public/fonts/Geometria.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Geometria"),
+    url("../public/fonts/Geometria-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Geometria"),
+    url("../public/fonts/Geometria-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Geometria"),
+    url("../public/fonts/Geometria-Heavy.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    src: local("Lato"), url("../public/fonts/Lato.woff") format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    --main-blue: #0085FF;
+    --main-dark-grey: #A9A9B9;
+    --main-light-grey: #E3E3EC;
+    --main-red: #EB5757;
+    --main-black: #1F1F24;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-red) #fff;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+    background-color: #C4C4C4;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+    background-color: var(--main-red);
+    border-radius: 5px;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-family: Geometria, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--main-black);
+}
+
+.left-bar {
+    position: relative;
+    width: 106px;
+}
+
+.left-bar h1 {
+    position: absolute;
+    top: 170px;
+    right: -28px;
+
+    width: 200px;
+
+    font-size: 16pt;
+    text-align: left;
+
+    transform: rotateZ(90deg);
+}

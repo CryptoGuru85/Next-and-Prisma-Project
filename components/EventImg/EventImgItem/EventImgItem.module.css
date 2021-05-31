@@ -1,0 +1,47 @@
+
+.mainImg {
+    /*padding: 15px 15px 15px 0;*/
+    box-sizing: border-box;
+}
+
+.imgContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0 24px 0;
+}
+.deliteIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+}
+.deliteIcon:hover {
+    opacity: 0.7;
+}
+.deliteIcon:active {
+    opacity: 1;
+}
+.icon {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+.UploadImg {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 270px;
+    border: 1px solid var(--main-dark-grey);
+    box-sizing: border-box;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.UploadImg:hover {
+    opacity: .5;
+}
+.UploadImg:active {
+    opacity: .7;
+}

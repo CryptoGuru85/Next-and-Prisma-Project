@@ -1,0 +1,45 @@
+.subscribeFormContainer {
+    width: 320px;
+    padding-top: 32px;
+}
+.subscribeFormContainer span {
+    font-family: Lato;
+    font-size: 16pt;
+    font-weight: normal;
+    color: #fff;
+    padding: 12px 0 12px;
+}
+.emailForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+.emailInput {
+    height: 100%;
+    padding: 0 12px 0 12px;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-dark-grey);
+
+    border: none;
+    background-color: #fff;
+}
+.submitButton {
+    height: 100%;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+    border: none;
+    background-color: var(--main-red);
+    padding: 0 25px 0 25px;
+    transition: background-color ease-in 60ms;
+}
+.submitButton:hover {
+    background-color: #d54f4f;
+}

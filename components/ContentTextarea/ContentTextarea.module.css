@@ -1,0 +1,41 @@
+.mainInput {
+    width: 100%;
+    padding: 15px 15px 85px 15px;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+    min-width: 100%;
+}
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+.inputContainer {
+    display: grid;
+    grid-template-areas: "label select"
+                         ". options";
+    grid-template-columns: 1fr 4fr;
+    margin: 24px 0 24px 0;
+}
+
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 50px;
+}

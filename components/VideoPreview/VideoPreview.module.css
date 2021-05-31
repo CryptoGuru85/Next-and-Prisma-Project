@@ -1,0 +1,12 @@
+.videoPreview {
+    height: 180px;
+    width: 270px;
+
+    position: relative;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0;
+    right: -12px;
+}

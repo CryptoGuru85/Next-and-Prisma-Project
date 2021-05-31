@@ -1,0 +1,46 @@
+.mainContainer {
+
+}
+
+.mainContainer:first-child {
+    margin-top: 24px;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    padding: 2px 24px 2px 24px;
+    margin: 14px 0 14px 0;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--main-blue);
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: all ease-in .1s;
+}
+.titleActive:after {
+    content: "";
+
+    width: 2px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+
+    background-color: var(--main-red);
+
+    transition: all ease-in .1s;
+}
+
+.title:hover {
+    color: var(--main-red);
+}
+
+.itemList {
+    list-style: none;
+}

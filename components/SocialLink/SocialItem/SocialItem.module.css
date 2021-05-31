@@ -1,0 +1,63 @@
+.mainInput {
+    width: 100%;
+
+    grid-area: select;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: #0085FF;
+    margin: 6px 0 6px 0;
+
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+
+    box-sizing: content-box;
+    appearance: none;
+    padding-left: 15px;
+}
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+.inputContainer {
+    display: flex;
+    margin: 4px 0 4px 0;
+}
+
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 50px;
+}
+.actions {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.actionContainer {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    justify-content: flex-end;
+}
+.actionContainer button {
+    margin-left: 24px;
+}

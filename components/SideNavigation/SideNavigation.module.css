@@ -1,0 +1,19 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer:not(:first-child) {
+    padding-top: 24px;
+    border-top: 1px solid var(--main-light-grey);
+}
+
+.title {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.itemList {
+    list-style: none;
+}

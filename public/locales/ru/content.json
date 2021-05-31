@@ -1,0 +1,10 @@
+{
+    "CONTENT_EVENT_CONTENT": "Содержание",
+    
+    "CONTENT_EVENT_VIDEO_LINK": "Ссылка на видео",
+    "CONTENT_EVENT_360_LINK": "Ссылка на тур в 360",
+    "CONTENT_EVENT_ABOUT_EVENT": "О событии",
+    "CONTENT_EVENT_EVENT_PICTURE": "Изображения события",
+    "CONTENT_EVENT_VIDEO_OVERVIEW": "Предосмотр видео",
+    "CONTENT_EVENT_360_TOUR": "Тур в 360"
+}

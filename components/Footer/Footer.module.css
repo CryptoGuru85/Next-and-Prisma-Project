@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    background-color: var(--main-black);
+}
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    min-height: 260px;
+    padding: 64px 135px 100px 135px;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px;
+}
+.footerLogo h1 {
+    width: 28px;
+    padding-left: 16px;
+    font-family: Geometria;
+    font-weight: normal;
+    font-size: 16pt;
+    line-height: 23px;
+    color: #fff;
+}
+.footerLogoLegal {
+    width: 180px;
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 12pt;
+    color: #fff8;
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerNavigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 160px;
+}
+.footerNavigation li {
+    margin-bottom: 16px;
+}
+.footerNavigation a {
+    font-family: Lato;
+    font-size: 16pt;
+    color: #fff;
+    text-decoration: none;
+    transition: color linear 60ms;
+}
+.footerNavigation a:hover {
+    color: var(--main-red);
+}

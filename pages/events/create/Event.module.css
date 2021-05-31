@@ -1,0 +1,98 @@
+.eventMainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    padding: 45px 0 45px 0;
+}
+
+.title h1 {
+    margin: 0;
+    font-family: Geometria, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--main-black)
+}
+.toggleIcon {
+    margin-left: 70px;
+}
+.eventMain{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 24px 0 24px;
+}
+.eventMain h2 {
+    font-family: Geometria, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+.contentTable {
+    display: flex;
+}
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+}
+.actions {
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.actions:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 2px;
+
+    background-color: var(--main-light-grey);
+}
+.actionContainer {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+.actionContainer button {
+    margin-left: 24px;
+}
+.eventMain p {
+    font-family: Lato;
+    font-size: 12pt;
+}
+.eventMain h1 {
+    font-family: Lato;
+    font-size: 18pt;
+    padding-bottom: 50px;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 50px;
+}
+.eventButtonContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: -10%;
+    padding:  64px 64px 0 64px;
+}
+.eventButton {
+    padding-right: 20px;
+}

@@ -1,0 +1,57 @@
+.mainContainer{
+    display: grid;
+    position: relative;
+    width: 1003px;
+    height: 485px;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+}
+.mainPlayer {
+    width: 673px;
+    height: 428px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+}
+.secondPlayer {
+    width: 330px;
+    height: 428px;
+    border-radius: 5px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.playerSettings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainImg {
+    width: 670px;
+    height: 428px;
+    border: 1px solid var(--main-dark-grey);
+    box-sizing: border-box;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.secondImg {
+    width: 157px;
+    height: 104px;
+    margin: 0 2px 0 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.settings {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-around;
+}

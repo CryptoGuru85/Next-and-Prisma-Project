@@ -1,0 +1,309 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:@127.0.0.1:3306/doublebbaubble"
+}
+
+// Country / region
+model Region {
+  @@map(name: "region")
+
+  id            Int    @id @default(autoincrement())
+  name          String
+  // addresses     Address[]
+  events        Event[]
+}
+
+model City {
+  id            Int    @id @default(autoincrement())
+  name          String
+  country       Int
+}
+
+model Country {
+  id            Int    @id @default(autoincrement())
+  name          String
+  dial_code     String
+  code          String
+}
+
+model Club {
+  id            Int    @id @default(autoincrement())
+  name          String
+}
+
+// model Address {
+//   id            Int     @id @default(autoincrement())
+//   regionId      Int?
+//   cityId        Int?
+//   region        Region? @relation(fields: [regionId], references: [id])
+//   cities        City?   @relation(fields: [cityId], references: [id])
+//   postalCode    String?
+//   street        String?
+//   building      String?
+//   room          String?
+//   events        Event[]
+// }
+
+// location / place
+model Location {
+  @@map(name: "location")
+
+  id            Int    @id @default(autoincrement())
+  name          String
+  events        EventsOnLocations[]
+}
+
+model LatLng {
+  @@map(name: "lat_lng")
+
+  id                Int     @id @default(autoincrement())
+  latitude          Float
+  longitude         Float
+  events            Event[]
+}
+
+//  Позже это станет коллекцией диапазонов или расписаний для времени дейвтсия события
+// model WorkingTime {
+//   id                Int     @id @default(autoincrement())
+//   startTime         DateTime  @default(now())
+//   endTime           DateTime  @default(now())
+//   events            Event[]
+// }
+
+model Event {
+  @@map(name: "event")
+
+  id                Int     @id @default(autoincrement())
+  author            String?
+  eventName         String
+  image             String
+  ticketprice       Float?
+  siteName          String?
+  facebookLink      String?
+  instagramLink     String?
+  twitterLink     String?
+  linkedinLink     String?
+  pinterestLink     String?
+  vkontakteLink     String?
+  phone             String?
+  club              String?
+  // workingTimeId     Int?
+  // workingTime       WorkingTime?  @relation(fields: [workingTimeId], references: [id])
+  workingTimeFrom   DateTime  @default(now())
+  workingTimeTo     DateTime  @default(now())
+  status            Int  @default(10)
+  publication       Int  @default(0)
+  regionId          Int? // TODO: регионы вынесены в address, но временно попросили вернуть
+  region            Region? @relation(fields: [regionId], references: [id])
+  // addressId         Int?
+  // address           Address?  @relation(fields: [addressId], references: [id])
+  locations         EventsOnLocations[]
+  address           String?
+  mapLink           String?
+  dateCreate        DateTime  @default(now())
+  userId            Int
+  coordinatesId     Int?
+  coordinates       LatLng? @relation(fields: [coordinatesId], references: [id])
+  menuId            Int?
+  menu              Menu? @relation(fields: [menuId], references: [id])
+  contentId         Int?
+  content           Content? @relation(fields: [contentId], references: [id])
+  plans             Plan[]
+  tickets           Ticket[]
+  reviews           Review[]
+}
+
+model EventsOnLocations {
+  @@map(name: "events_on_locations")
+
+  locationId    Int
+  eventId       Int
+  location      Location @relation(fields: [locationId], references: [id])
+  event         Event @relation(fields: [eventId], references: [id])
+
+  @@id([locationId, eventId])
+}
+
+model Kitchen {
+  @@map(name: "kitchen")
+
+  id            Int     @id @default(autoincrement())
+  name          String
+  menu          MenuKitchens[]
+}
+
+model SpecialMenu {
+  @@map(name: "special_menu")
+
+  id            Int     @id @default(autoincrement())
+  name          String
+  menu          MenuSpecialMenu[]
+}
+
+model Facility {
+  @@map(name: "facility")
+
+  id            Int     @id @default(autoincrement())
+  name          String
+  menu          MenuFacilities[]
+}
+
+// MENU
+model Menu {
+  @@map(name: "menu")
+
+  id             Int     @id @default(autoincrement())
+  kitchens       MenuKitchens[]
+  specialMenu    MenuSpecialMenu[]
+  facilities     MenuFacilities[]
+  images         Json?
+  averagePrice   Json? // {price, currency}
+  event          Event?
+}
+
+model MenuKitchens {
+  @@map(name: "menu_kitchens")
+
+  kitchenId Int
+  menuId    Int
+  kitchen   Kitchen @relation(fields: [kitchenId], references: [id])
+  menu      Menu @relation(fields: [menuId], references: [id])
+
+  @@id([kitchenId, menuId])
+}
+
+model MenuSpecialMenu {
+  @@map(name: "menu_special_menu")
+
+  specialMenuId Int
+  menuId        Int
+  specialMenu   SpecialMenu @relation(fields: [specialMenuId], references: [id])
+  menu          Menu @relation(fields: [menuId], references: [id])
+
+  @@id([specialMenuId, menuId])
+}
+
+model MenuFacilities {
+  @@map(name: "menu_facilities")
+
+  facilityId    Int
+  menuId        Int
+  facility      Facility @relation(fields: [facilityId], references: [id])
+  menu          Menu @relation(fields: [menuId], references: [id])
+
+  @@id([facilityId, menuId])
+}
+
+// CONTENT
+model Content {
+  @@map(name: "content")
+
+  id                Int     @id @default(autoincrement())
+  videoOverviewLink String?
+  tours             ContentTours[]
+  tourLink          String?
+  logo              String?
+  about             String? @db.Text
+  event             Event?
+  media             Json? // {eventPictures, videoOverview}
+  dateCreate        DateTime  @default(now())
+  userId            Int
+}
+
+model Tour {
+  @@map(name: "tour")
+
+  id            Int     @id @default(autoincrement())
+  name          String
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  contents      ContentTours[]
+}
+
+model ContentTours {
+  @@map(name: "content_tours")
+
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  tourId    Int
+  contentId Int
+  tour      Tour @relation(fields: [tourId], references: [id])
+  content   Content @relation(fields: [contentId], references: [id])
+
+  @@id([tourId, contentId])
+}
+
+// OBJECT PLAN
+model Plan {
+  @@map(name: "plan")
+
+  id             Int     @id @default(autoincrement())
+  name           String
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  eventId        Int
+  event          Event?   @relation(fields: [eventId], references: [id])
+  items          PlanItems[]
+}
+
+model PlanItems {
+  @@map(name: "plan_items")
+
+  id             Int     @id @default(autoincrement())
+  name           String?
+  price          Json? // {price, currency}
+  qrCode         String?
+  options        Json?
+  status         Int     @default(0)
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  planId         Int
+  plan           Plan    @relation(fields: [planId], references: [id])
+}
+
+// TICKET
+model Ticket {
+  @@map(name: "ticket")
+
+  id             Int     @id @default(autoincrement())
+  name           String
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  eventId        Int
+  event          Event?  @relation(fields: [eventId], references: [id])
+  items          TicketItems[]
+}
+
+model TicketItems {
+  @@map(name: "ticket_items")
+
+  id             Int     @id @default(autoincrement())
+  name           String?
+  price          Json? // {price, currency}
+  qrCode         String?
+  options        Json?
+  status         Int     @default(0)
+  count          Int     @default(0)
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  ticketId       Int
+  ticket         Ticket  @relation(fields: [ticketId], references: [id])
+}
+
+// REVIEWS
+model Review {
+  @@map(name: "review")
+
+  id             Int     @id @default(autoincrement())
+  bread          Int
+  path           String  @db.Text  // Materialized Path - иерархическая модель данных
+  text           String? @db.Text
+  dateCreate     DateTime  @default(now())
+  userId         Int
+  eventId        Int
+  event          Event?  @relation(fields: [eventId], references: [id])
+}

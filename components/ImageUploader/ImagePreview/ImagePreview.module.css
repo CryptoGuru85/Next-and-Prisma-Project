@@ -1,0 +1,26 @@
+
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+
+    cursor: pointer;
+}
+
+.icon {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+.imageContainer {
+    height: 180px;
+    width: 270px;
+
+    display: block;
+    box-sizing: border-box;
+    object-fit: cover;
+
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+}

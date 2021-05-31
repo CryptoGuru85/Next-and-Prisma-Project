@@ -1,0 +1,20 @@
+{
+	"MENU_TITLE": "Меню",
+
+	"MENU_KITCHEN_TITLE": "Кухня",
+	"MENU_KITCHEN_RUSSIAN": "Русская",
+	"MENU_KITCHEN_CHINESE": "Китайская",
+	"MENU_KITCHEN_BRITISH": "Британская",
+
+	"MENU_SPECIAL_TITLE": "Особое меню",
+	"MENU_SPECIAL_VEGAN": "Виган",
+	"MENU_SPECIAL_MEAT": "Мясо",
+	"MENU_SPECIAL_MIXED": "Смешанное",
+
+	"MENU_FACILITIES_TITLE": "Сооружения",
+	"MENU_FACILITIES_SMOKING_ROOM": "Комната для курения",
+	"MENU_FACILITIES_TERRACE": "Терраса",
+	"MENU_FACILITIES_OPEN_SPACE": "Открытое пространство",
+	
+	"MENU_AVERAGE_PRICES_TITLE": "Средние цены"
+}

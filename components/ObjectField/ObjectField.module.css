@@ -1,0 +1,110 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+}
+.title h1 {
+    padding: 45px 0 45px 0;
+    font-family: Geometria, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--main-black)
+}
+.navigation {
+    width: 270px;
+}
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+.contentTable {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 0 24px;
+}
+.contentTable h2 {
+    font-family: Geometria, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.inputForm {
+    width: 100%;
+}
+.actions {
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.actions:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 2px;
+
+    background-color: var(--main-light-grey);
+}
+.actionContainer {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+.actionContainer button {
+    margin-left: 24px;
+}
+
+.actionPopUp {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenMain {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 20px;
+}
+.field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    margin: -20px 50px 0 180px;
+}
+.popFieldUp {
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.fileUploader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.formLable {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    padding: 30px 0 0 0;
+}
+
+.qrActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--main-light-grey);
+}

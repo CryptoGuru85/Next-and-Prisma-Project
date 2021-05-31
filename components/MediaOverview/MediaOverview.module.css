@@ -1,0 +1,76 @@
+.mainContainer {
+    width: 995px;
+    height: 485px;
+
+    background-color: #fff;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.previewContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.mainPreview {
+    width: 672px;
+    height: 428px;
+
+    border-radius: 0 5px 5px 5px;
+    background-color: var(--main-black);
+    overflow: hidden;
+}
+
+.previews {
+    width: 320px;
+    padding-left: 7px;
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    position: relative;
+
+    width: 158px;
+    height: 105px;
+    margin: 1px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.playIcon {
+    position: absolute;
+    top: calc(105px / 2 - 12px);
+    left: calc(158px / 2 - 12px);
+    transition: transform ease-in .1s;
+    filter: drop-shadow( 0 3px 5px #0008);
+}
+.thumbnail:hover .playIcon {
+    transform: scale(1.5);
+}
+
+.controlContainer {
+    width: 100%;
+    height: 64px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.controlLeft {
+    width: 176px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

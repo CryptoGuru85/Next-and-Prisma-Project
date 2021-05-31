@@ -1,0 +1,33 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.iconContainer {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+.labelContainer {
+    width: 100px;
+    margin-left: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.labelContainer span {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}

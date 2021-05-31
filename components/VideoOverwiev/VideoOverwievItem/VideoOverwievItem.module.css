@@ -1,0 +1,37 @@
+.VideoContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0 24px 0;
+}
+.mainVideo {
+    padding: 15px 15px 15px 0;
+}
+.deliteIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+}
+.deliteButton {
+    display: contents;
+}
+.deliteIcon:hover {
+    opacity: 0.7;
+}
+.deliteIcon:active {
+    opacity: 1;
+}
+.icon {
+    justify-content: flex-end;
+    display: flex; 
+}
+.UploadVideo {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 320px;
+    background-color: var(--main-dark-grey);
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+}

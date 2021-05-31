@@ -1,0 +1,20 @@
+.VideoContainer {
+    display: flex;
+    margin: 24px 0 24px 0;
+}
+.mainVideo {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}

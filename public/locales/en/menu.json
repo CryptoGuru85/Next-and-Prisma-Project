@@ -1,0 +1,20 @@
+{
+	"MENU_TITLE": "Menu",
+
+	"MENU_KITCHEN_TITLE": "Kitchen",
+	"MENU_KITCHEN_RUSSIAN": "Russian",
+	"MENU_KITCHEN_CHINESE": "Chinese",
+	"MENU_KITCHEN_BRITISH": "British",
+
+	"MENU_SPECIAL_TITLE": "Special menu",
+	"MENU_SPECIAL_VEGAN": "Vegan",
+	"MENU_SPECIAL_MEAT": "Meat",
+	"MENU_SPECIAL_MIXED": "Mixed",
+
+	"MENU_FACILITIES_TITLE": "Facilities",
+	"MENU_FACILITIES_SMOKING_ROOM": "Smoking room",
+	"MENU_FACILITIES_TERRACE": "Terrace",
+	"MENU_FACILITIES_OPEN_SPACE": "Open space",
+
+	"MENU_AVERAGE_PRICES_TITLE": "Average prices"
+}

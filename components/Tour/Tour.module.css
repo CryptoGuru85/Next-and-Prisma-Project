@@ -1,0 +1,52 @@
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.deliteIcon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+}
+.tourContainer {
+    display: flex;
+    flex-direction: row;
+}
+.actionContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 14px 0 0;
+}
+.deliteIcon:hover {
+    opacity: 0.7;
+}
+.deliteIcon:active {
+    opacity: 1;
+}
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0 24px 0;
+}
+
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 50px;
+}

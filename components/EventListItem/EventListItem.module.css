@@ -1,0 +1,138 @@
+.mainContainer {
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--main-light-grey);
+    padding: 20px;
+    position: relative;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    margin: 0 50px 0 50px;
+    cursor: pointer;
+}
+.fieldCheck {
+    width: 32px;
+    height: 100%;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}
+.fieldName {
+    margin: 0 50px 0 0;
+}
+
+.field span {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+
+.preview {
+    width: 64px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.actionPopUp {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.actionPopUpPreview{
+    width: 644px;
+    display: flex;
+    flex-direction: row;
+}
+
+.popuppreview {
+    width: 275px;
+    height: 412px;
+    border-radius: 5px;
+}
+
+.previewinfo {
+    color: #1F1F24;
+    margin-left: 15px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.eventName{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Geometria, sans-serif;
+    line-height: 1.2;
+}
+
+.eventAuth{
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.eventDateWrap{
+    display: flex;
+}
+
+.eventDate{
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.eventAddressLabel{
+    color: #0085FF;
+    margin: 15px 0 5px 0;
+}
+
+.eventTicketLabel{
+    margin: 15px 0 3px 0;
+}
+
+.eventTicket{
+    font-family: Geometria, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: black;
+}
+
+.eventTicketValue{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.eventWorkingTimeWrap{
+    margin-top: 20px;
+    color: black;
+}
+
+.eventWorkingTimeStartWrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.eventWorkingTimeStart{
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.eventWorkingTimeEndWrap{
+    display: flex;
+}
+
+.eventWorkingTimeEnd{
+    margin-left: 15px;
+    margin-top: 2px;
+}

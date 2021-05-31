@@ -1,0 +1,30 @@
+.mainContainer {
+    position: absolute;
+    top: -215px;
+    left: -315px;
+    padding: 25px 20px;
+    z-index: 1200;
+    width: 90vw;
+
+    background-color: #fff;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    pointer-events: none;
+    transform: scale(0);
+
+    transition: transform ease-in .1s;
+
+    z-index: 1000;
+    height: 800px;
+}
+
+.active {
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.backIcon{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}

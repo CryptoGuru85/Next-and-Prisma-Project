@@ -1,0 +1,20 @@
+{
+	"EVENTS_TITLE": "События",
+	"EVENTS_ALL": "Все события",
+	"EVENTS_ADD": "Добавить событие",
+
+	"EVENT_SETTINGS_TITLE": "Настройки",
+	"EVENT_SETTINGS_INFO": "Информация о событии",
+	"EVENT_SETTINGS_MENU": "Меню",
+	"EVENT_SETTINGS_CONTENT": "Контент",
+	"EVENT_SETTINGS_GUESTS": "Гости",
+	"EVENT_SETTINGS_OBJECT_PLAN": "План объекта",
+	"EVENT_SETTINGS_OBJECT_PLAN_NEW": "Добавить план",
+
+	"SECURITY_TITLE": "Безопасность",
+	"SECURITY_PASSWORD_SETTINGS": "Настройки пароля",
+	"SECURITY_ENTER_IN_ACCOUNTS": "Войти в аккаунты",
+	"SECURITY_TFA": "Двойная аунтетификация",
+	"SECURITY_CONFIDENTIALITY": "Конфедециальность",
+	"SECURITY_DELETE_ACCOUNT": "Удалить аккаунт"
+}

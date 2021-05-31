@@ -1,0 +1,49 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.mainContainer svg {
+    flex: 1;
+}
+.mainContainer:hover .icon path {
+    stroke: var(--main-red);
+}
+.mainContainer:hover .icon circle {
+    stroke: var(--main-red);
+}
+
+.iconContainer {
+    /*width: 32px;*/
+    /*height: 32px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon path {
+    stroke: #fff;
+    transition: all ease-in .1s;
+}
+.icon circle {
+    stroke: #fff;
+    transition: all ease-in .1s;
+}
+
+.label {
+    flex: 4;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--main-black);
+    text-align: left !important;
+
+    margin-left: 12px;
+}
+.mainContainer:hover .label {
+    opacity: .7;
+}

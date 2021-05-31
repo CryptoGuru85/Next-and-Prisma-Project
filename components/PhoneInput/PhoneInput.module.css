@@ -1,0 +1,183 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: baseline;
+    padding-bottom: 25px;
+}
+
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+
+    color: var(--main-black);
+}
+
+.form {
+  width: 100%;
+
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+
+
+  border: 1px solid var(--main-dark-grey);
+  border-radius: 5px;
+  
+  box-sizing: content-box;
+  appearance: none;
+}
+
+.dialSelector {
+    width: 96px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--main-blue);
+
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dialPicker {
+    position: relative;
+    padding: 8px 18px 8px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border-bottom: 1px solid var(--main-light-grey);*/
+
+    transition: all ease-in .15s;
+}
+.dialPicker:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: var(--main-red);
+    transition: all ease-in .2s;
+}
+.dialPicker:hover {
+    background-color: var(--main-light-grey);
+}
+
+.dialPicker:hover:before {
+    height: 100%;
+}
+
+.dialPickerNoBorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialPicker span {
+    min-width: 2em;
+}
+.flag {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /*border: 1px solid var(--main-light-grey);*/
+    border-radius: 50%;
+}
+
+.chevron {
+    width: 12px;
+    height: 8px;
+    margin-left: 4px;
+
+    background-image: url("/icons/chevron-red.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    transition: all ease-in .15s;
+}
+.chevronDown {
+    transform: rotateZ(-180deg);
+}
+
+.dropdownMenu {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 48px;
+    left: -8px;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 16px 26px 16px;
+
+    background-color: #fff;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+
+    overflow: auto;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform ease-in-out .1s, opacity ease-in .1s;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1000;
+}
+.dropdownMenuShow {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+    pointer-events: all;
+}
+
+.dropdownSearch {
+    color: var(--main-dark-grey);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--main-black);
+    padding-bottom: 5px;
+}
+
+.countryName {
+    padding-left: 20px;
+}
+.countryCode {
+    padding-left: 10px;
+}
+
+.dropdownElement {
+    cursor: pointer;
+    padding: 16px;
+}
+
+.phoneInput {
+    margin-left: 8px;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--main-blue);
+
+    border: none;
+    outline: none;
+}

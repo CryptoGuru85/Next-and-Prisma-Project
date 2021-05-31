@@ -1,0 +1,118 @@
+.mainInput {
+    width: 100%;
+
+    padding: 15px;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+
+    box-sizing: content-box;
+    appearance: none;
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: 50%;
+}
+
+.inputContainer {
+    display: flex;
+    margin: 24px 0 24px 0;
+    width: 103%;
+}
+
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    min-width: 140px;
+    padding-right: 50px;
+}
+
+.eventMain{
+    display: flex;
+    flex-direction: column; 
+    max-height: 750px; 
+}
+
+.eventContainer {
+    background-color: white;
+    max-height: 950px;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+}
+.eventContainer p {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.region {
+    display: flex;
+    flex-direction: column;
+}
+.region p {
+    margin-bottom: 7px;
+}
+.actions {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.actionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.actionContainer button {
+    margin-left: 24px;
+}
+
+.actionPopUp {
+    width: 270px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.label {
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+
+.field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -48px;
+    left: -544px;
+}
+.fieldCheck {
+    width: 32px;
+    height: 100%;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}

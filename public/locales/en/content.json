@@ -1,0 +1,10 @@
+{
+    "CONTENT_EVENT_CONTENT": "Content",
+
+    "CONTENT_EVENT_VIDEO_LINK": "Video overwiev link",
+    "CONTENT_EVENT_360_LINK": "Add 360 tour link",
+    "CONTENT_EVENT_ABOUT_EVENT": "About event",
+    "CONTENT_EVENT_EVENT_PICTURE": "Event picture",
+    "CONTENT_EVENT_VIDEO_OVERVIEW": "Video overwiev",
+    "CONTENT_EVENT_360_TOUR": "360 tour"
+}

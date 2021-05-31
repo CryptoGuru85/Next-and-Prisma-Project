@@ -1,0 +1,31 @@
+.mainContainer {
+    width: 40px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--main-red);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.mainContainerActive {
+    background-color: var(--main-blue);
+}
+
+.switch {
+    width: 14px;
+    height: 14px;
+    margin: 0 3px 0 3px;
+    background-color: #fff;
+    border: none;
+    border-radius: 100%;
+
+    transition: all ease-in .1s;
+}
+
+.switchActive {
+    transform: translateX(19px);
+}

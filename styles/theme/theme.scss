@@ -1,0 +1,30 @@
+
+
+$font-family: 'Poppins', sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+"Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-color: #0085FF;
+$input-background: #F0F4F5;
+$primary-5: #0085FF;
+$link-color: #0085FF; // link color
+$success-color: #52c41a; // success state color
+$warning-color: #faad14; // warning state color
+$error-color: #f5222d; // error state color
+$font-size-base: 14px; // major text font size
+$heading-color: rgba(0, 0, 0, 0.85); // heading text color
+$text-color: #000000; // major text color
+$height-base: 42px; //base height
+$input-color: $text-color;
+$text-color-secondary: rgba(0, 0, 0, .45); // secondary text color
+$disabled-color: rgba(0, 0, 0, .25); // disable state color
+$border-radius-base: 4px; // major border radius
+$input-bg: $input-background;
+$input-hover-border-color: $primary-5;
+$border-color-base: $input-background; // major border color
+$box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+$btn-font-weight: 700;
+$border-radius-base: 10px;
+$border-color-base: #0085FF;
+$border-color-split: #0085FF; // split border inside a component
+
+$input-height-base: $height-base;

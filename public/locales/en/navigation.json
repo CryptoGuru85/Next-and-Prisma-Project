@@ -1,0 +1,20 @@
+{
+	"EVENTS_TITLE": "Events",
+	"EVENTS_ALL": "All Events",
+	"EVENTS_ADD": "Add Event",
+
+	"EVENT_SETTINGS_TITLE": "Settings menu",
+	"EVENT_SETTINGS_INFO": "Event Info",
+	"EVENT_SETTINGS_MENU": "Menu",
+	"EVENT_SETTINGS_CONTENT": "Content",
+	"EVENT_SETTINGS_GUESTS": "Guests",
+	"EVENT_SETTINGS_OBJECT_PLAN": "Object plan",
+	"EVENT_SETTINGS_OBJECT_PLAN_NEW": "Add new",
+
+	"SECURITY_TITLE": "Security",
+	"SECURITY_PASSWORD_SETTINGS": "Password settings",
+	"SECURITY_ENTER_IN_ACCOUNTS": "Enter in accounts",
+	"SECURITY_TFA": "Two-factor authentication",
+	"SECURITY_CONFIDENTIALITY": "Confidentiality",
+	"SECURITY_DELETE_ACCOUNT": "Delete account"
+}

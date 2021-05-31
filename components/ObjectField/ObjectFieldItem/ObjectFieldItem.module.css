@@ -1,0 +1,71 @@
+.mainInput {
+    width: 347px;
+    height: 48;
+
+    grid-area: select;
+    padding: 15px;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+
+    border: 1px solid var(--main-dark-grey);
+    border-radius: 5px;
+
+    box-sizing: content-box;
+    appearance: none;
+}
+.label {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+.picker {
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    grid-area: label;
+
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    color: var(--main-black);
+}
+.picker p {
+    padding-left: 10px;
+}
+.inputContainer {
+    display: flex;
+    margin: 24px 0 24px 0;
+}
+
+.inputContainer p {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 170px;
+    margin: 0 50px 0 50px;
+
+}
+.fieldCheck {
+    width: 32px;
+    height: 100%;
+    margin: 0 8px 0 0;
+    cursor: pointer;
+}

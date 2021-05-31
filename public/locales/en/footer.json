@@ -1,0 +1,28 @@
+{
+	"COPYRIGHT": "© Double bubble, 2019, все права защищены",
+
+	"NAVIGATION_ONLINE_TITLE": "Online",
+	"NAVIGATION_LIVE_STREAM_TITLE": "Live Stream",
+	"NAVIGATION_EVENTS_TITLE": "Events",
+	"NAVIGATION_RESTAURANTS_TITLE": "Restaurants",
+	"NAVIGATION_CLUBS_TITLE": "Clubs",
+	"NAVIGATION_PLACES_TITLE": "Places",
+	"NAVIGATION_VILLAS_TITLE": "Villas",
+	"NAVIGATION_RENT_TRANSPORT_TITLE": "Rent Transport",
+	"NAVIGATION_PLOTS_OF_LAND_TITLE": "Plots of land",
+	"NAVIGATION_HOUSING_TITLE": "Housing",
+	"NAVIGATION_LAWYERS_TITLE": "Lawyers",
+	"NAVIGATION_MAGIC_PEOPLE_TITLE": "Magic People",
+	"NAVIGATION_JOB_TITLE": "Job",
+	"NAVIGATION_MARKET_PLACE_TITLE": "Market Place",
+	"NAVIGATION_SUPPORT_TITLE": "Support",
+	"NAVIGATION_VACANCIES_TITLE": "Vacancies",
+
+	"SUBSCRIBE_TITLE": "Subscribe",
+	"SUBSCRIBE_PLACEHOLDER": "Enter your e-mail",
+	"SUBSCRIBE_SEND_BUTTON": "Send",
+	"SUBSCRIBE_LOADING": "Loading",
+	"SUBSCRIBE_REPEAT_BUTTON": "Repeat",
+	"SUBSCRIBE_SUCCESS": "You successfully subscribed to our updates!",
+	"SUBSCRIBE_ERROR": "Something went wrong."
+}

@@ -1,0 +1,8 @@
+.content {
+    stroke: var(--main-blue);
+    transition: all ease-in .3s;
+}
+
+.mainContainer:hover .content {
+    stroke: var(--main-red);
+}

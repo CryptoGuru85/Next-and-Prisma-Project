@@ -1,0 +1,38 @@
+.button {
+    padding: 15px 35px 15px 35px;
+
+    background: none;
+    border: 2px solid var(--main-blue);
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--main-blue);
+
+    transition: opacity ease-in 50ms;
+}
+
+.buttonLink {
+    display: inline-block;
+    transition: opacity ease-in 50ms;
+}
+
+.buttonDanger{
+    border-color: var(--main-red);
+    color: var(--main-red);
+}
+
+.button:hover:enabled {
+    opacity: .5;
+}
+.button:active:enabled {
+    opacity: .7;
+}
+
+.button:disabled {
+    border-color: var(--main-dark-grey);
+    color: var(--main-dark-grey);
+    cursor: not-allowed;
+}

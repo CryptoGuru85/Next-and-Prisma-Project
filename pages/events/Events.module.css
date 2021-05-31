@@ -1,0 +1,117 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding: 45px 0 45px 0;
+}
+
+.title h1 {
+
+    font-family: Geometria, sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--main-black)
+}
+
+.toggleIcon {
+    margin-left: 70px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+    /*max-width: 1200px;*/
+}
+
+.navigation {
+    width: 270px;
+}
+
+.eventTable {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 0 24px;
+}
+
+.eventTable h2 {
+    font-family: Geometria, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.eventTable h3 {
+    width: 170px;
+    margin: 0 50px 0 50px;
+
+    font-family: Geometria, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+}
+.eventName {
+    margin: 0 50px 0 0 !important;
+}
+.eventTableTitles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    padding: 0 20px 0 20px;
+}
+.checkField {
+    width: 32px;
+    margin: 0 8px 0 0;
+}
+
+
+.eventTableContent {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eventTableContent span {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--main-black);
+}
+
+.actions {
+    position: relative;
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.actions:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 2px;
+
+    background-color: var(--main-light-grey);
+}
+
+.actionContainer {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+}
+.actionContainer button {
+    margin-left: 24px;
+}

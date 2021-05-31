@@ -1,0 +1,7 @@
+.region {
+    display: flex;
+    flex-direction: column;
+}
+.region p {
+    margin-bottom: 7px;
+}

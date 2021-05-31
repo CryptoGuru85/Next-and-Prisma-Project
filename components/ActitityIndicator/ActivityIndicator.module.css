@@ -1,0 +1,27 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer span {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--main-black);
+}
+
+.indicator {
+    border: 2px solid var(--main-dark-grey);
+    border-color: var(--main-dark-grey) transparent var(--main-dark-grey) transparent;
+    border-radius: 100%;
+    animation: anim 1.2s linear infinite;
+}
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

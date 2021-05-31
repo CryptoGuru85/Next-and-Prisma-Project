@@ -1,0 +1,21 @@
+.mainContainer {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    padding: 26px 12px 5px 12px;
+
+    background-color: #fff;
+    border: 1px solid var(--main-blue);
+    border-radius: 5px;
+    pointer-events: none;
+    transform: scale(0);
+
+    transition: transform ease-in .1s;
+
+    z-index: 1000;
+}
+.active {
+    pointer-events: auto;
+    transform: scale(1);
+}

@@ -1,0 +1,28 @@
+{
+	"COPYRIGHT": "© Double bubble, 2019, все права защищены",
+
+	"NAVIGATION_ONLINE_TITLE": "Онлайн",
+	"NAVIGATION_LIVE_STREAM_TITLE": "Прямые трансляции",
+	"NAVIGATION_EVENTS_TITLE": "События",
+	"NAVIGATION_RESTAURANTS_TITLE": "Рестораны",
+	"NAVIGATION_CLUBS_TITLE": "Клубы",
+	"NAVIGATION_PLACES_TITLE": "Места",
+	"NAVIGATION_VILLAS_TITLE": "Виллы",
+	"NAVIGATION_RENT_TRANSPORT_TITLE": "Аренда транспорта",
+	"NAVIGATION_PLOTS_OF_LAND_TITLE": "Аренда земли",
+	"NAVIGATION_HOUSING_TITLE": "Аренда жилья",
+	"NAVIGATION_LAWYERS_TITLE": "Адвокаты",
+	"NAVIGATION_MAGIC_PEOPLE_TITLE": "Магические люди",
+	"NAVIGATION_JOB_TITLE": "Работа",
+	"NAVIGATION_MARKET_PLACE_TITLE": "Рынок",
+	"NAVIGATION_SUPPORT_TITLE": "Поддержка",
+	"NAVIGATION_VACANCIES_TITLE": "Вакансии",
+
+	"SUBSCRIBE_TITLE": "Подписаться",
+	"SUBSCRIBE_PLACEHOLDER": "Введите электронную почту",
+	"SUBSCRIBE_SEND_BUTTON": "Отправить",
+	"SUBSCRIBE_LOADING": "Загрузка",
+	"SUBSCRIBE_SUCCESS": "Вы успешно подписались на обновления!",
+	"SUBSCRIBE_ERROR": "Что-то пошло не так.",
+	"SUBSCRIBE_REPEAT_BUTTON": "Повторить"
+}
